@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>stm32CodeGen</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.compiled.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row codegen-par" id="pin-bitband">
+            <div class="col">
+                <h1><br>STM32 pin BitBang codeGen.<br><br></h1>
+                <div>
+                    <h2>Notes:</h2>
+                    <p class="note">Tested only on STM32F103C8&nbsp;</p>
+                </div>
+                <div class="gen-settings"><input type="text" placeholder="pin name" par="pinname"><select par="gpio"><optgroup label="GPIO"><option value="0">GPIOA</option><option value="1">GPIOB</option><option value="2">GPIOC</option><option value="3">GPIOD</option></optgroup></select>
+                    <input
+                        type="number" placeholder="pin num" min="0" max="15" step="1" value="0" name="pinnum" par="pinnum"><select par="pindir"><optgroup label="PIN DIR"><option value="0" selected="">IN</option><option value="1">OUT</option></optgroup></select></div><pre>
+<code class="C">
+// Here will appear generated code=)
+</code>
+</pre></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pin-bitnand.js"></script>
+</body>
+
+</html>
